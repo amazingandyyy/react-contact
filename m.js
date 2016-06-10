@@ -13,6 +13,7 @@ var Title = React.createClass({
         return {contacts: [], uuid: 0}
     },
     render: function() {
+
         return (
             <div className="row">
                 <div className="four columns">
@@ -22,7 +23,11 @@ var Title = React.createClass({
                         <input id="newEmail" className="u-full-width" type="text" placeholder="e@mail.com" required/><br/>
                         <input className="button-primary" type="submit" value="Add contact"/>
                     </form>
-                    <h6>built with <a href="https://facebook.github.io/react/" target="_blank">React</a><br/> by <a href="http://amazingandyyy.github.io/" target="_blank">Amazingandyyy</a></h6>
+                    <h6>built with
+                        <a href="https://facebook.github.io/react/" target="_blank">React</a><br/>
+                        by
+                        <a href="http://amazingandyyy.github.io/" target="_blank">Amazingandyyy</a>
+                    </h6>
                 </div>
                 <div className="eight columns">
                     <table className="u-full-width">
@@ -63,8 +68,6 @@ var Title = React.createClass({
     // ()=>{return this.deleteContact(contact.uuid)}
     deleteContact: function(e) {
         var UUID = Number(e.target.getAttribute('data-uuid'));
-        console.log('delete clicked: ', UUID);
-        console.log('this.state.contacts: ', this.state.contacts);
         this.setState({
             contacts: this.state.contacts.filter(contact => {
                 return contact.uuid !== UUID;
@@ -86,14 +89,11 @@ var Title = React.createClass({
     }
 })
 
-
 var Storage = {
     get: function() {
         try {
             var contacts = JSON.parse(localStorage.contacts);
-            console.log(contacts);
         } catch (err) {
-            console.log('create localStorage.contacts');
             var contacts = [];
         }
         return contacts;
