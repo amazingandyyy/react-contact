@@ -17,12 +17,12 @@ var Title = React.createClass({
             <div className="row">
                 <div className="four columns">
                     <h4>Contacts</h4>
-                    <h6> by <a href="http://amazingandyyy.github.io/" target="_blank">Amazingandyyy</a></h6>
                     <form onSubmit={this.addContact}>
                         <input id="newName" className="u-full-width" type="text" placeholder="name" required/><br/>
                         <input id="newEmail" className="u-full-width" type="text" placeholder="e@mail.com" required/><br/>
                         <input className="button-primary" type="submit" value="Add contact"/>
                     </form>
+                    <h6>built with <a href="https://facebook.github.io/react/" target="_blank">React</a><br/> by <a href="http://amazingandyyy.github.io/" target="_blank">Amazingandyyy</a></h6>
                 </div>
                 <div className="eight columns">
                     <table className="u-full-width">

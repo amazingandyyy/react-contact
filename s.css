@@ -1,6 +1,18 @@
 .container {
-    padding-top: 30px;
+    padding-top: 30px !important;
+    user-select: none;
+    -webkit-user-select: none;
 }
 button {
-    margin-bottom: 5px;
+    margin-bottom: 0px;
+}
+#logo {
+    margin: auto;
+    min-width: 80px;
+    max-width: 15%;
+}
+@media (max-width: 700px) {
+    .container {
+        padding-top: 10px;
+    }
 }
