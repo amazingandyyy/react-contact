@@ -17,6 +17,7 @@ var Title = React.createClass({
             <div className="row">
                 <div className="four columns">
                     <h4>Contacts</h4>
+                    <h6> by <a href="http://amazingandyyy.github.io/" target="_blank">Amazingandyyy</a></h6>
                     <form onSubmit={this.addContact}>
                         <input id="newName" className="u-full-width" type="text" placeholder="name" required/><br/>
                         <input id="newEmail" className="u-full-width" type="text" placeholder="e@mail.com" required/><br/>
