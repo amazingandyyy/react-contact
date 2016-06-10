@@ -18,8 +18,8 @@ var Title = React.createClass({
                 <div className="four columns">
                     <h4>Contacts</h4>
                     <form onSubmit={this.addContact}>
-                        <input id="newName" className="u-full-width" type="text" placeholder="name" required/>
-                        <input id="newEmail" className="u-full-width" type="text" placeholder="e@mail.com" required/>
+                        <input id="newName" className="u-full-width" type="text" placeholder="name" required/><br/>
+                        <input id="newEmail" className="u-full-width" type="text" placeholder="e@mail.com" required/><br/>
                         <input className="button-primary" type="submit" value="Add contact"/>
                     </form>
                 </div>
