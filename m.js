@@ -82,7 +82,6 @@ var Title = React.createClass({
             contacts: this.state.contacts.concat(newContact),
             uuid: this.state.uuid + 1
         })
-        console.log('data: ', );
     }
 })
 
